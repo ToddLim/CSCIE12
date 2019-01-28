@@ -1,0 +1,102 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Home</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: crimson;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #dcdcdc}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+</style>
+<script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
+</head>
+<body>
+    <ul>
+        <li class="dropdown">
+    <a href="/cscie12_finalproject/index.html" class="dropbtn">Home</a>
+    <div class="dropdown-content">
+      <a href="#">About Us</a>
+      <a href="#">Contact Us</a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a href="/cscie12_finalproject/hygiene.html" class="dropbtn">Hygiene</a>
+    <div class="dropdown-content">
+      <a href="/cscie12_finalproject/hygiene/grooming.html">Grooming</a>
+    </div>
+  </li>
+          <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Physical Health</a>
+    <div class="dropdown-content">
+      <a href="#">Checkups</a>
+    </div>
+  </li>
+          <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Dog Psychology</a>
+    <div class="dropdown-content">
+      <a href="#">Training</a>
+    </div>
+  </li>
+</ul>
+    
+    <p><a href="/cscie12_finalproject/index.html">Home > </a></p>
+
+    <h2>Welcome!</h2>
+    <p>This is a site dedicated for those with dogs for animal companions or those seeking more information about having dogs as animal companions in the future. Whatever your level of experience, we are here to equip you with the right information for your needs through a positive user experience.</p>
+    <p>**Note: There are currently only three working pages: [1] Home (/index.html); [2] Hygiene (/hygiene.html); [3] Grooming (/hygiene/grooming.html)</p>
+    
+    <a data-fancybox="gallery" href="/cscie12_finalproject/pictures_dogs/img_akitashepherd.jpg"><img alt="Akita Shepherd Dog" src="/cscie12_finalproject/pictures_dogs/img_akitashepherd.jpg" style="float: left;"></a>
+    <a data-fancybox="gallery" href="/cscie12_finalproject/pictures_dogs/img_dalmation.jpg"><img alt="Dalmation Dog" src="/cscie12_finalproject/pictures_dogs/img_dalmation.jpg" style="float: left;"></a>
+    <a data-fancybox="gallery" href="/cscie12_finalproject/pictures_dogs/img_pug.jpg"><img alt="Pug Dog" src="/cscie12_finalproject/pictures_dogs/img_pug.jpg" style="float: left;"></a>
+    
+</body>
+</html>
