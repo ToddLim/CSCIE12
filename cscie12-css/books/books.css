@@ -1,0 +1,44 @@
+/*
+  CSS file for books.html
+*/
+
+.date, .isbn {
+    font-size: 80%;
+}
+
+.publisher {
+    margin-bottom: 10px;
+    font-variant: small-caps;
+}
+
+.author {
+    font-style: italic;
+    color: red;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    color: darkgreen;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    color: hotpink;
+}
+
+img {
+    float: right;
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+/* @author Todd Lim */
+/* @class CSCI E-12 Fall 2018 */
