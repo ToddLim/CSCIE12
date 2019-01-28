@@ -1,0 +1,106 @@
+<!-- this is the markup document that should contains a form
+     that represents the choices available on the 
+     Dado Tea Lunch Special paper form -->
+     
+<!-- remember to use action="http://cscis12.dce.harvard.edu/echo" for the form element -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Dado Tea Lunch Special</title>
+    <link rel="stylesheet" type="text/css" href="form.css">
+</head>
+<body>
+    <h1>Dado Tea Lunch Special</h1>
+    <p>Monday through Friday<br/> 11am -- 3pm<br/> $9.95 plus tax<br/><br/>Includes sandwich, snack, and drink.</p>
+    <form action="http://cscie12.dce.harvard.edu/echo" method="post">
+        <fieldset>
+            <legend>Order Information</legend>
+            <b><label for="name">Name</label></b><br/>
+            <input type="text" name="order" id="name" value="Place Name Here"><br/><br/>
+            <input type="radio" name="order" id="forHere" value="For Here">
+            <label for="forHere">For Here</label>
+            <input type="radio" name="order" id="toGo" value="To Go" checked>
+            <label for="toGo">To Go</label><br/><br/>
+        </fieldset>
+        <fieldset>
+            <legend>Sandwiches</legend>
+            <br/><b>Monday</b><br/>
+            <input type="radio" name="sandwich" id="tomatoMozzarella" value="Tomato Mozzarella">
+            <label for="tomatoMozzarella">Tomato Mozzarella</label><br/>
+            <input type="radio" name="sandwich" id="chickenSalad" value="Chicken Salad">
+            <label for="chickenSalad">Chicken Salad</label><br/>
+            <br/><b>Tuesday</b><br/>
+            <input type="radio" name="sandwich" id="greekSaladWrap" value="Greek Salad Wrap">
+            <label for="greekSaladWrap">Greek Salad Wrap</label><br/>
+            <input type="radio" name="sandwich" id="totoWrap" value="Toto Wrap">
+            <label for="totoWrap">Toto Wrap</label><br/>
+            <br/><b>Wednesday</b><br/>
+            <input type="radio" name="sandwich" id="redPepperHummus" value="Red Pepper Hummus">
+            <label for="redPepperHummus">Red Pepper Hummus</label><br/>
+            <input type="radio" name="sandwich" id="roastedTurkey" value="Roasted Turkey">
+            <label for="roastedTurkey">Roasted Turkey</label><br/>
+            <br/><b>Thursday</b><br/>
+            <input type="radio" name="sandwich" id="carrot-gingerHummusWrap" value="Carrot-Ginger Hummus Wrap">
+            <label for="carrot-gingerHummusWrap">Carrot-Ginger Hummus Wrap</label><br/>
+            <input type="radio" name="sandwich" id="eggSalad" value="Egg Salad">
+            <label for="eggSalad">Egg Salad</label><br/>
+            <br/><b>Friday</b><br/>
+            <input type="radio" name="sandwich" id="dadoWrap" value="Dado Wrap">
+            <label for="dadoWrap">Dado Wrap</label><br/>
+            <input type="radio" name="sandwich" id="tunaSalad" value="Tuna Salad">
+            <label for="tunaSalad">Tuna Salad</label><br/>
+            <br/><hr/><br/>
+            <input type="checkbox" name="sandwich" id="glutenFreeOption" value="Gluten Free Bread ($0.75 extra)">
+            <label for="glutenFreeOption">Gluten Free Bread ($0.75 extra)</label><br/><br/>
+        </fieldset>
+        <fieldset>
+            <legend>Snack</legend>
+            <br/><b>Snacks</b><br/>
+            <input type="radio" name="snack" id="apple" value="Apple">
+            <label for="apple">Apple</label><br/>
+            <input type="radio" name="snack" id="banana" value="Banana">
+            <label for="banana">Banana</label><br/>
+            <input type="radio" name="snack" id="potatoChips" value="Potato Chips">
+            <label for="potatoChips">Potato Chips</label><br/><br/>
+        </fieldset>
+        <fieldset>
+            <legend>Drink</legend>
+            <br/><b>Drinks</b><br/>
+            <select>
+                <optgroup label="None">
+                    <option value="0">Really, none</option>
+                </optgroup>
+                <optgroup label="Black Tea">
+                    <option value="1">Hot Black Tea - Keemun</option>
+                    <option value="2">Hot Black Tea - Decaf Keemun</option>
+                    <option value="3">Iced Black Tea - Keemun</option>
+                    <option value="4">Iced Black Tea - Decaf Keemun</option>
+                </optgroup>
+                <optgroup label="Green Tea">
+                    <option value="5">Hot Green Tea - Sencha</option>
+                    <option value="6">Hot Green Tea - Decaf</option>
+                    <option value="7">Iced Green Tea - Sencha</option>
+                    <option value="8">Iced Green Tea - Decaf</option>
+                <optgroup label="Coffee">
+                    <option value="9">Hot Coffee</option>
+                    <option value="10">Hot Decaf Coffee</option>
+                    <option value="11">Iced Coffee</option>
+                    <option value="12">Iced Decaf Coffee</option>
+                <optgroup label="Bubble Tea ($1.50 extra)">
+                    <option value="13">Bubble Tea</option>
+                </optgroup>
+            </select>
+            <br/><br/><hr/><br/>
+            <input type="checkbox" name="drink" id="largeDrink" value="Large drink ($0.75 extra)">
+            <label for="largeDrink">Large drink ($0.75 extra)</label><br/><br/>
+        </fieldset>
+        <br/>
+        <input type="submit" value="Place Order">
+    </form>
+</body>
+</html>
+
+<!-- @author Todd Lim -->
+<!-- @class CSCI E-12 Fall 2018 --> 

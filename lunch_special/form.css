@@ -1,0 +1,23 @@
+/* CSS Rules for the Dado Tea Lunch Special Form */
+
+h1 {
+    color: darkcyan;
+    text-align: center;
+}
+
+p {
+    color: darkslateblue;
+    line-height: 115%;
+}
+
+b {
+    color: red;
+    padding: 1.2em;
+}
+
+legend {
+    color: blueviolet;
+    font-size: 150%;
+}
+/* @author Todd Lim */
+/* @class CSCI E-12 Fall 2018 */
