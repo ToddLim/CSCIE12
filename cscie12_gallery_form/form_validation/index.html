@@ -1,0 +1,54 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Assignment - Form Validation</title>
+<style>
+    * {font-family: tahoma, arial, helvetica, sans-serif;}
+    body {margin: 1em;} 
+    legend {font-weight: bold;}
+    
+    input.error {border: thin solid red;}
+    label.error {
+        padding-left: 8px;
+        color: red;
+    }
+</style>
+<script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    var validation = $("#myForm").validate( 
+    {
+        rules: {
+            name: {required: true, minlength: 2},
+            email: {required: true, email: true},
+            comments: {required: true, minlength: 2}
+        }
+    });
+});    
+</script>
+</head>
+<body>
+    <form id="myForm" method="post" action="http://cscie12.dce.harvard.edu/echo">
+        <fieldset>
+            <legend>Information</legend>
+            <p>
+                <label for="name">Name</label> 
+                <input id="name" name="name" size="25" class="required"/>
+            </p>
+            <p>
+                <label for="email">Email Address</label> 
+                <input id="email" name="email" size="25" class="required email"/>
+            </p>
+            <p>
+                <label for="comments">Comments</label> 
+                <input id="comments" name="comments" size="25" class="required comments"/>
+            </p>
+            <p>
+                <input class="submit" type="submit" value="Submit Form"/>
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
